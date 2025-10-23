@@ -28,7 +28,7 @@ pipeline {
     }
     stage("nexus upload"){
       steps{
-        nexusArtifactUploader artifacts: [[artifactId: 'spring-petclinic', classifier: '', file: 'target/*.jar', type: 'jar']], credentialsId: 'nexus-cred-id', groupId: 'org.springframework.samples', nexusUrl: '172.25.213.228:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'petclinic-pipeline', version: '3.5.0-SNAPSHOT'
+        nexusArtifactUploader artifacts: [[artifactId: 'spring-petclinic', classifier: '', file: 'target/spring-petclinic-3.5.0-SNAPSHOT.jar', type: 'jar']], credentialsId: 'nexus-cred-id', groupId: 'org.springframework.samples', nexusUrl: '172.25.213.228:8081/', nexusVersion: 'nexus3', protocol: 'http', repository: 'petclinic-pipeline', version: '3.5.0-SNAPSHOT'
       }
     }
   }
