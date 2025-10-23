@@ -9,7 +9,7 @@ pipeline {
     /*
     stage("git clone"){
       steps{
-        checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenking-github-ssh-key', url: 'git@github.com:talent-dev24/spring-petclinic.git']])
+       // checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenking-github-ssh-key', url: 'git@github.com:talent-dev24/spring-petclinic.git']])
       }
     }
    */
